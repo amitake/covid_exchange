@@ -1,1 +1,1 @@
-# covid_exchange
+# coviddollar
