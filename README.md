@@ -9,5 +9,6 @@ $python coviddollar.py 30
 ```
 
 usage: coviddollar.py days
+
 days: How many days of data to use
 
