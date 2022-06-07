@@ -27,13 +27,16 @@ class main:
         positive = covid_exchange.iloc[days*-1:,1].values.tolist()
         usd = covid_exchange.iloc[days*-1:,2].values.tolist()
         
+        if days >= 50:
+            date = date[::5]
+            positive = positive[::5]
+            usd = usd[::5]
         fig, ax1 = plt.subplots(1,1, figsize=(15,8), facecolor='w')
         ax2 = ax1.twinx()
         ax1.bar(date, positive ,color="lightblue",label="number of New-positive(covid-19)")
-        
         ax2.plot(usd, linestyle="solid", color="k", marker="^", label="us_dollar-to-yen")
         ax2.set_ylim(100, 140)
-        
+        fig.autofmt_xdate(rotation=45)
         ax2.set_title(f'covid-19/exchange(dollar-to-yen){days}-days')
         handler1, label1 = ax1.get_legend_handles_labels()
         handler2, label2 = ax2.get_legend_handles_labels()
@@ -41,7 +44,6 @@ class main:
         # ax1.grid(True)
         fig.tight_layout()
         fig.show()
-        
         now = datetime.datetime.now()
         filename = './output/log_' + now.strftime('%Y%m%d_%H%M%S') + '.png'
         fig.savefig(filename, dpi=200)
