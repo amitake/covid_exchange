@@ -44,7 +44,6 @@ class main:
         # ax1.grid(True)
         fig.tight_layout()
         fig.show()
-        
         now = datetime.datetime.now()
         filename = './output/log_' + now.strftime('%Y%m%d_%H%M%S') + '.png'
         fig.savefig(filename, dpi=200)
