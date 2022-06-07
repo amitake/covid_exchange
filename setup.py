@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="coviddollar",
-    version="0.0.2",
+    version="0.0.3",
     author="ami takenaka",
     author_email="amiami0806takenaka@gmail.com",
     description="A package for comparison dollar exchange rate fluctuations and changes in the number of new covid-19 infections",
