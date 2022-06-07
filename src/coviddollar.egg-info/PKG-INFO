@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: coviddollar
-Version: 0.0.2
+Version: 0.0.3
 Summary: A package for comparison dollar exchange rate fluctuations and changes in the number of new covid-19 infections
 Home-page: https://github.com/amitake/coviddollar
 Author: ami takenaka

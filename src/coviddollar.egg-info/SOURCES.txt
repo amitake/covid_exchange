@@ -3,7 +3,9 @@ README.md
 setup.cfg
 setup.py
 .ipynb_checkpoints/Untitled-checkpoint.ipynb
+dist/coviddollar-0.0.2-py3-none-any.whl
 dist/coviddollar-0.0.2-py3.9.egg
+dist/coviddollar-0.0.2.tar.gz
 src/.DS_Store
 src/coviddollar.py
 src/.ipynb_checkpoints/Untitled-checkpoint.ipynb
