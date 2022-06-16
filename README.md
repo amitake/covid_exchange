@@ -5,7 +5,7 @@ A package for comparison dollar exchange rate fluctuations and changes in the nu
 # Example of use
 ```
 $pip coviddollar
-$python coviddollar.py 100
+$coviddollar 100
 ```
 
 usage: coviddollar.py days
